@@ -1,13 +1,18 @@
+/*////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    Themes Bootstrap: https://themesbootstrap.com.mx/
+    Youtube tutorial: https://youtu.be/vQiKeppm9r0
+
+////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 :root {
     --primary-color: #1e1f24;
     --secondary-color: #dd9365;
-    --thrid-color: #2B7EE9;
-    --fourth-color: #E11661;
     --white: #ffffff;
 }
 
 body {
-    background-image: url(../img/banner-main.jpg);
+    background-image:url("../img/banner-main.jpg");
     color: var(--white);
     font-family: 'Oswald', sans-serif;
     font-weight: 200 !important;
@@ -22,8 +27,20 @@ h1, h2 {
     background-color: var(--primary-color) !important;
 }
 
+.bg-grey {
+    background-color: #efefef;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+a.text-primary:hover {
+    color: var(--primary-color) !important;
+}
+
 a {
-    color: rgba(256, 256, 256, .4);
+    color: rgba(256, 256, 256, .2);
 }
 
 a:hover {
@@ -48,7 +65,7 @@ a:hover {
 }
 
 .nav-link, .navbar-toggler  {
-    color: var(--thrid-color);
+    color: rgba(256, 256, 256, .2);
 }
 
 #hero {
@@ -69,6 +86,16 @@ a:hover {
     padding: 0 4rem;
 }
 
+.carousel-inner {
+    max-height: 100vh;
+}
+
+.carousel-button {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(256, 256, 256, .65);
+    width: 100%;
+}
 
 .video-button {
     margin: auto;
@@ -92,3 +119,19 @@ a:hover {
     transition: all .5s;
 }
 
+.carousel-control-next, .carousel-control-prev {
+    top: unset;
+    bottom: 150px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}

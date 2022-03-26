@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #1e1f24;
+    --secondary-color: #dd9365;
+    --thrid-color: #2B7EE9;
+    --fourth-color: #E11661;
+    --white: #ffffff;
+}
+
+body {
+    background-image: url(../img/banner-main.jpg);
+    color: var(--white);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200 !important;
+    letter-spacing: .1rem;
+}
+
+h1, h2 {
+    font-weight: 700 !important;
+}
+
+.bg-dark {
+    background-color: var(--primary-color) !important;
+}
+
+a {
+    color: rgba(256, 256, 256, .4);
+}
+
+a:hover {
+    color: rgba(256, 256, 256, .5);
+}
+
+.active {
+    color: var(--secondary-color);
+}
+
+.active:hover {
+    color: var(--secondary-color);
+}
+
+.logo {
+    min-width: 160px;
+    max-width: 180px;
+}
+
+.navbar {
+    min-height: 80px;
+}
+
+.nav-link, .navbar-toggler  {
+    color: var(--thrid-color);
+}
+
+#hero {
+    position: relative;
+}
+
+.lead {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.left-border {
+    border-left: 7px solid rgba(256, 256, 256, .2);
+}
+
+.content {
+    margin-top: 5rem;
+    padding: 0 4rem;
+}
+
+
+.video-button {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    height: 140px;
+    width: 140px;
+    font-size: 70px;
+    padding: 0px 45px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: 10px solid rgba(256, 256, 256, .3);
+    background-clip: padding-box;
+    z-index: 999;
+    -webkit-appearance: none;
+    transition: all .5s;
+}
+
+.video-button:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+

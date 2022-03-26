@@ -11,6 +11,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
@@ -25,8 +28,8 @@
         </a>
         <div class="hero__segment-container   row no-gutters">
             <div class="hero__segment-left  col-lg-6 col-md-12">
-                <div class="container">
-                    <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="header-container">
+                    <nav class="header__navbar   navbar navbar-expand-lg bg-dark">
                         <a class="navbar-brand" href="#"><img src="./img/logo-cod.svg" class="logo"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -37,7 +40,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item mx-xl-4 mx-sm-1">
-                                    <a class="nav-link" href="#">Nosotros</a>
+                                    <a class="nav-link " href="#">Nosotros</a>
                                 </li>
                                 <li class="nav-item mx-xl-4 mx-sm-1">
                                     <a class="nav-link" href="#">Cursos</a>
@@ -52,22 +55,20 @@
                 <div class="container">
                     <div class="content">
 
-                        <h1 class="display-1 mb-5">DOMINA EL <br>LENGUAJE DIGITAL</h1>
-                        <div class="left-border">
-                            <ul class="list-unstyled lead mb-5 pl-3">
-                                <li class="mb-2 lead">Contamos con bootcamps que permiten a los estudiantes aplicar de forma inmediata sus conocimientos en el mundo laboral. Service</li>
-                               
-                            </ul>
+                        <h1 class="hero-left__title display-1 mb-5">DOMINA EL <br>LENGUAJE DIGITAL</h1>
+                        <div class="hero-left__description-container left-border">
+                            
+                            <p class="hero-left__description">Contamos con bootcamps que permiten a los estudiantes aplicar de forma inmediata sus conocimientos en el mundo laboral.</p>
                         </div>
 
 
-                        <a href="#" class="lead-link-more d-block active mb-5">Aprende más</a>
+                        <a href="#" class="lead-link-more d-block active ">Aprende más</a>
 
                         <ul class="list-inline lead">
-                            <li class="list-inline-item mr-4"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
-                            <li class="list-inline-item mr-4"><a href="#"><i class="icon ion-logo-dribbble"></i></a></li>
-                            <li class="list-inline-item mr-4"><a href="#"><i class="icon ion-logo-whatsapp"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
+                            <li class="list-inline-item mr-4"><a class="social-media__links" href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                            <li class="list-inline-item mr-4"><a class="social-media__links" href="#"><i class="icon ion-logo-dribbble"></i></a></li>
+                            <li class="list-inline-item mr-4"><a class="social-media__links" href="#"><i class="icon ion-logo-whatsapp"></i></a></li>
+                            <li class="list-inline-item"><a class="social-media__links" href="#"><i class="icon ion-logo-youtube"></i></a></li>
                         </ul>
 
                     </div>
@@ -98,23 +99,136 @@
                             <span class="sr-only">Next</span>
                         </a>
                         <div class="carousel-button text-center py-4">
-                            <h2 class="display-4 text-primary text-uppercase text-underline mb-0"><a href="#" class="text-primary"><u>Inicia ya</u></a></h2>
+                            <h2 class="display-4 text-primary text-uppercase text-underline mb-0"><a href="#" class="text-primary"><u>inscríbete ahora</u></a></h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="bootcamps">
+        <div class="bootcamps-container">
+            <h2 class="bootcamps__title">🖥️Nuestros bootcapms🖥️</h2>
+            <div class="bootcamps__bootcamps-cursos">
+                <article class="bootcamps__bootcamps-curso">
+                    <figure class="bootcamps__bootcamps-image-container">
+                        <img class="bootcamps__bootcamps-image-curso" src="./img/curso-react.png" alt="">
+                    </figure>
+                    <div class="bootcamps__bootcamps-description">
+                        <h3 class="bootcamps__bootcamps-description-title">Curso de Java</h3>
+                        <div class="bootcamps__bootcamps-description-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            , a aperiam itaque consectetur, autem cumque ipsam. Omnis, 
+                            quidem. Nam atque vero neque excepturi.
+                        </div>
 
-    <section class="cursos">
-        <div class="cursos-container">
-            <h1 class="cursos__title">Nuestro Bootcamps</h1>
+                    </div>
+                   <div class="bootcamps__bootcamps-link-container">
+                       <a class="bootcamps__bootcamps-links" href="">Comprar</a>
+   
+                    </div>
+
+                </article>
+                <article class="bootcamps__bootcamps-curso">
+                    <figure class="bootcamps__bootcamps-image-container">
+                        <img class="bootcamps__bootcamps-image-curso" src="./img/curso-java.png" alt="">
+                    </figure>
+                    <div class="bootcamps__bootcamps-description">
+                        <h3 class="bootcamps__bootcamps-description-title">Curso de Java</h3>
+                        <div class="bootcamps__bootcamps-description-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            , a aperiam itaque consectetur, autem cumque ipsam. Omnis, 
+                            quidem. Nam atque vero neque excepturi.
+                        </div>
+
+                    </div>
+                   <div class="bootcamps__bootcamps-link-container">
+                       <a class="bootcamps__bootcamps-links" href="">Comprar</a>
+   
+                    </div>
+
+                </article>
+                <article class="bootcamps__bootcamps-curso">
+                    <figure class="bootcamps__bootcamps-image-container">
+                        <img class="bootcamps__bootcamps-image-curso" src="./img/curso-dart.jfif" alt="">
+                    </figure>
+                    <div class="bootcamps__bootcamps-description">
+                        <h3 class="bootcamps__bootcamps-description-title">Curso de Java</h3>
+                        <div class="bootcamps__bootcamps-description-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            , a aperiam itaque consectetur, autem cumque ipsam. Omnis, 
+                            quidem. Nam atque vero neque excepturi.
+                        </div>
+
+                    </div>
+                   <div class="bootcamps__bootcamps-link-container">
+                       <a class="bootcamps__bootcamps-links" href="">Comprar</a>
+   
+                    </div>
+
+                </article>
+                <article class="bootcamps__bootcamps-curso">
+                    <figure class="bootcamps__bootcamps-image-container">
+                        <img class="bootcamps__bootcamps-image-curso" src="./img/curso-java.png" alt="">
+                    </figure>
+                    <div class="bootcamps__bootcamps-description">
+                        <h3 class="bootcamps__bootcamps-description-title">Curso de Java</h3>
+                        <div class="bootcamps__bootcamps-description-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            , a aperiam itaque consectetur, autem cumque ipsam. Omnis, 
+                            quidem. Nam atque vero neque excepturi.
+                        </div>
+
+                    </div>
+                   <div class="bootcamps__bootcamps-link-container">
+                       <a class="bootcamps__bootcamps-links" href="">Comprar</a>
+   
+                    </div>
+
+                </article>
+                <article class="bootcamps__bootcamps-curso">
+                    <figure class="bootcamps__bootcamps-image-container">
+                        <img class="bootcamps__bootcamps-image-curso" src="./img/curso-java.png" alt="">
+                    </figure>
+                    <div class="bootcamps__bootcamps-description">
+                        <h3 class="bootcamps__bootcamps-description-title">Curso de Java</h3>
+                        <div class="bootcamps__bootcamps-description-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            , a aperiam itaque consectetur, autem cumque ipsam. Omnis, 
+                            quidem. Nam atque vero neque excepturi.
+                        </div>
+
+                    </div>
+                   <div class="bootcamps__bootcamps-link-container">
+                       <a class="bootcamps__bootcamps-links" href="">Comprar</a>
+   
+                    </div>
+
+                </article>
+                <article class="bootcamps__bootcamps-curso">
+                    <figure class="bootcamps__bootcamps-image-container">
+                        <img class="bootcamps__bootcamps-image-curso" src="./img/curso-java.png" alt="">
+                    </figure>
+                    <div class="bootcamps__bootcamps-description">
+                        <h3 class="bootcamps__bootcamps-description-title">Curso de Java</h3>
+                        <div class="bootcamps__bootcamps-description-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            , a aperiam itaque consectetur, autem cumque ipsam. Omnis, 
+                            quidem. Nam atque vero neque excepturi.
+                        </div>
+
+                    </div>
+                   <div class="bootcamps__bootcamps-link-container">
+                       <a class="bootcamps__bootcamps-links" href="">Comprar</a>
+   
+                    </div>
+
+                </article>
+            </div>
 
         </div>
-
     </section>
-
-    <!-- Modal -->
+    
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">

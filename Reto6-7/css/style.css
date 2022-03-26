@@ -1,15 +1,11 @@
-/*////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    Themes Bootstrap: https://themesbootstrap.com.mx/
-    Youtube tutorial: https://youtu.be/vQiKeppm9r0
-
-////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 :root {
-    --primary-color: #1e1f24;
+    --primary-color: #22241e;
     --secondary-color: #dd9365;
     --white: #ffffff;
     --blue:rgba(13, 180, 231, 0.623);
+    --color-button:rgb(246, 245, 247);
 }
 
 .body {
@@ -20,9 +16,8 @@
     letter-spacing: .1rem;
 }
 
-h1, h2 {
-    font-weight: 700 !important;
-}
+
+
 
 .bg-dark {
     background-color: var(--primary-color) !important;
@@ -32,21 +27,21 @@ h1, h2 {
     background-color: #efefef;
 }
 
-.text-primary {
+/* .text-primary {
     color: var(--primary-color) !important;
-}
+} */
 
-a.text-primary:hover {
+/* a.text-primary:hover {
     color: var(--primary-color) !important;
-}
+} */
 
 a {
     color: rgba(256, 256, 256, .2);
 }
 
-a:hover {
+/* a:hover {
     color: rgba(256, 256, 256, .5);
-}
+} */
 
 .active {
     color: var(--secondary-color);
@@ -61,17 +56,43 @@ a:hover {
     max-width: 180px;
 }
 
-.navbar {
+.header-container{
+    max-width: 100%;
+}
+
+.header__navbar{
     min-height: 80px;
 }
 
 .nav-link, .navbar-toggler  {
     color: var(--white);
+    
+}
+.nav-link{
+    font-size: 1.2rem;
+    transition: all 0.5s;
+    font-weight: 600;
 }
 
 .hero {
     position: relative;
 }
+.hero-left__title,
+.hero-left__description{
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+.hero-left__title{
+    margin: 0;
+    font-size: 2rem;
+}
+.hero-left__description{
+    font-size: 1.3rem;
+}
+.social-media__links{
+    color: var(--white);
+}
+
 
 
 .lead,
@@ -111,26 +132,10 @@ a:hover {
 }
 
 .hero__video-button {
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    height: 140px;
-    width: 140px;
-    font-size: 70px;
-    padding: 0px 45px;
-    border-radius: 50%;
-    background-color: var(--white);
-    border: 10px solid rgba(256, 256, 256, .3);
-    background-clip: padding-box;
-    z-index: 999;
-    -webkit-appearance: none;
-    transition: all .5s;
+   display: none;
 }
 
-.hero__video-button:hover {
-    transform: scale(1.1);
-    transition: all .5s;
-}
+
 
 .carousel-control-next, .carousel-control-prev {
     top: unset;
@@ -147,4 +152,130 @@ a:hover {
 
 .carousel-control-prev {
     left: 10px;
+}
+
+.bootcamps{
+    padding: 2rem 0;
+
+}
+.bootcamps-container{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+
+}
+.bootcamps__title{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+.bootcamps__bootcamps-cursos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+
+}
+.bootcamps__bootcamps-curso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--blue);
+    overflow: hidden;
+    
+
+}
+.bootcamps__bootcamps-image-container{
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.bootcamps__bootcamps-image-curso{
+    width: 100%;
+}
+.bootcamps__bootcamps-description{
+    padding: 1rem ;
+    text-align: center;
+
+}
+.bootcamps__bootcamps-description-title{
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+
+}
+.bootcamps__bootcamps-description-description{
+    font-size: 1.2rem;
+
+}
+.bootcamps__bootcamps-link-container{
+    font-weight: 500;
+    padding-bottom: 2rem;
+    display: flex;
+    gap:1rem;
+
+}
+.bootcamps__bootcamps-links{
+   
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    
+    background-color:var(--color-button);
+    border-radius: 20px;
+    
+   
+}
+
+
+@media(min-width:850px){
+    .hero-left__title{
+        font-size: 4rem;
+    }
+    .hero__video-button {
+        display: block;
+        margin: auto;
+        position: absolute;
+        top: 270px; 
+        left: 0; 
+        bottom: 0; 
+        right: 0;
+        height: 140px;
+        width: 140px;
+        font-size: 70px;
+        padding: 0px 45px;
+        border-radius: 50%;
+        background-color: var(--white);
+        border: 10px solid rgba(256, 256, 256, .3);
+        background-clip: padding-box;
+        z-index: 999;
+        -webkit-appearance: none;
+        transition: all .5s;
+    }
+    .hero__video-button:hover {
+        transform: scale(1.1);
+        transition: all .5s;
+    }
+    .bootcamps__title{
+        font-size: 2rem;
+    }
+    .lead-link-more{
+        margin-bottom: 5px;
+    }
+    .bootcamps__bootcamps-cursos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1024px;
+        margin: auto;
+       
+    
+    }
+    .hero__video-button{
+        top:0
+    }
+   
 }

@@ -9,13 +9,14 @@
     --primary-color: #1e1f24;
     --secondary-color: #dd9365;
     --white: #ffffff;
+    --blue:rgba(13, 180, 231, 0.623);
 }
 
-body {
+.body {
     background-image:url("../img/banner-main.jpg");
     color: var(--white);
     font-family: 'Oswald', sans-serif;
-    font-weight: 200 !important;
+    font-weight: 200 ;
     letter-spacing: .1rem;
 }
 
@@ -65,16 +66,28 @@ a:hover {
 }
 
 .nav-link, .navbar-toggler  {
-    color: rgba(256, 256, 256, .2);
+    color: var(--white);
 }
 
-#hero {
+.hero {
     position: relative;
 }
 
-.lead {
-    font-size: 1.5rem;
+
+.lead,
+.lead-link-more {
+    font-size: 2rem;
     font-weight: 200;
+    color: white;
+}
+.lead-link-more{
+    padding: 0.1rem;
+    margin: 0;
+    text-align: center;
+    border-radius: 20px;
+    background-color: var(--blue);
+
+  
 }
 
 .left-border {
@@ -97,7 +110,7 @@ a:hover {
     width: 100%;
 }
 
-.video-button {
+.hero__video-button {
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
@@ -106,7 +119,7 @@ a:hover {
     font-size: 70px;
     padding: 0px 45px;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    background-color: var(--white);
     border: 10px solid rgba(256, 256, 256, .3);
     background-clip: padding-box;
     z-index: 999;
@@ -114,7 +127,7 @@ a:hover {
     transition: all .5s;
 }
 
-.video-button:hover {
+.hero__video-button:hover {
     transform: scale(1.1);
     transition: all .5s;
 }

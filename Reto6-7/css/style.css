@@ -288,7 +288,60 @@
   line-height: 1rem;
 }
 
-/* !!!! */
+/* ! Cursos */
+
+.cursos {
+  padding: 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald", sans-serif;
+  gap: 4rem;
+}
+
+.cursos-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.cursos-continer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.cursos__curso-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cursos__curso-image {
+  height: 170px;
+  object-fit: cover;
+}
+
+.cursos__curso-title {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.6rem;
+  text-align: center;
+}
+
+.cursos__curso-date {
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.cursos__curso-button {
+  margin-top: 1rem;
+  border: 1px solid #000;
+  padding: 0.5rem 1.5rem;
+}
+
+/* !!! */
 
   .body {
     background-image: url("../img/banner-main.jpg");

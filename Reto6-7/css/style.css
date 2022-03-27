@@ -2,6 +2,7 @@
     --primary-color: #22241e;
     --secondary-color: #dd9365;
     --white: #ffffff;
+    --black: #000;
     --blue: rgba(13, 180, 231, 0.623);
     --color-button: rgb(246, 245, 247);
     scroll-behavior: smooth;
@@ -11,6 +12,40 @@
     --highlight-color-2: #5a5a5a;
     --code-color: #fff;
     --inverse-theme-color: #fff;
+  }
+
+  .header__navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: var(--white);
+    padding: 0 2rem;
+  }
+  
+  .navbar__logo-container {
+    display: flex;
+    padding: 1rem 0;
+  }
+  
+  .navbar__logo {
+    height: 100%;
+  }
+  .navbar__list-links-container {
+    display: flex;
+    align-items: center;
+  }
+  .navbar__list-link {
+    display: flex;
+    gap: 2rem;
+  }
+  .navbar__list-item-link {
+    color: var(--black);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300
+  }
+  
+  .navbar__list-item-link.active {
+    font-weight: 500
   }
   
   .body {

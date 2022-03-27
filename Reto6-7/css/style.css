@@ -6,7 +6,16 @@
     --white: #ffffff;
     --blue:rgba(13, 180, 231, 0.623);
     --color-button:rgb(246, 245, 247);
+    scroll-behavior: smooth;
+    --theme-color: #000F34;
+    --text-color: #000F34;
+    --highlight-color-1: #000F34;
+    --highlight-color-2: #5a5a5a;
+    --code-color: #fff;
+    --inverse-theme-color: #fff;
+    
 }
+
 
 .body {
     background-image:url("../img/banner-main.jpg");
@@ -153,6 +162,130 @@ a {
 .carousel-control-prev {
     left: 10px;
 }
+
+
+.programs {
+    padding: 2rem 0;
+  }
+  
+  .programs-container ,
+  .programs__programs{
+    padding: 0 2rem;
+    gap: 2rem;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    
+  }
+  
+  .programs__title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+ 
+  
+  .programs__courses {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 0.20rem solid rgb(109, 109, 109);
+    border-radius: 5rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+  
+  .programs__courses:hover {
+    box-shadow:
+      0 0 0.5rem var(--highlight-color-1),
+      0 0 1rem var(--highlight-color-1),
+      0 0 1.5rem var(--highlight-color-1);
+    transform: scale(1.05);
+  }
+  
+  .programs__courses-image-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .programs__courses-image {
+    width: 100%;
+  }
+  
+  .programs__courses-data {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .programs__courses-data-title {
+    color: var(--code-color);
+    margin: 0;
+  }
+  
+  .programs__courses-data-number-date {
+    color: var(--highlight-color-1);
+    font-weight: 500;
+    margin: 0;
+  }
+
+  
+  .programs__courses-data-about {
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  .programs__courses-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+ 
+  .programs__courses-button {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--inverse-theme-color);
+    transition: all 0.5s;
+  }
+  
+  .programs__courses-button--bg-blue {
+    background-color: var(--highlight-color-2);
+    border: 0.1rem solid var(--highlight-color-2);
+  }
+  
+  .programs__courses-button:hover {
+    border: 0.1rem solid var(--inverse-theme-color);
+    background-color: var(--theme-color);
+  }
+
+  @media (min-width: 854px)
+   {
+    max-width: 1024px;
+    margin: auto;
+    padding: 0;
+  }
+
+
+  .programs-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .programs__programs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+
 
 .bootcamps{
     padding: 2rem 0;

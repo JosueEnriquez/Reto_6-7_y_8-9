@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../scss/Form.scss"
 
 export default function Form() {
+  const navigate = useNavigate()
+
   return (
     <section className="form">
       <div className="form__image-container">
@@ -56,7 +59,7 @@ export default function Form() {
               HE LEÍDO Y ACEPTO LAS POLÍTICAS DE PRIVACIDAD
             </label>
           </div>
-          <button className="form__form-button">REGISTRAR</button>
+          <button onClick={navigate("/")} className="form__form-button">REGISTRAR</button>
         </form>
       </div>
     </section>

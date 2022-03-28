@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../scss/Info.scss"
 
 export default function Info() {
+  const navigate = useNavigate()
   return (
     <section className="info">
       <div className="info__image-container">
@@ -19,7 +21,7 @@ export default function Info() {
           FRONT-END Y EL BACK-END.
         </p>
         <p className="info__description-sub-description">MODALIDAD 100% VIRTUAL</p>
-        <button className="info__description-more">SHOW MORE</button>
+        <button onClick={navigate('/')} className="info__description-more">SHOW MORE</button>
       </div>
     </section>
   );

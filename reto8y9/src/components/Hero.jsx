@@ -1,30 +1,32 @@
 import React from "react";
+import { useNavigate, Link } from "react-router-dom";
 import '../scss/Hero.scss'
 
 export default function Hero() {
+  const navigate = useNavigate()
   return (
     <section className="hero">
       <div className="hero__contact-container">
         <ul className="hero__contact-list">
           <li className="hero__contact-item">
-            <a className="hero__contact-link" href="/">
+            <Link className="hero__contact-link" to="/">
               FACEBOOK
-            </a>
+            </Link>
           </li>
           <li className="hero__contact-item">
-            <a className="hero__contact-link" href="/">
+            <Link className="hero__contact-link" to="/">
               INSTAGRAM
-            </a>
+            </Link>
           </li>
           <li className="hero__contact-item">
-            <a className="hero__contact-link" href="/">
+            <Link className="hero__contact-link" to="/">
               YOUTUBE
-            </a>
+            </Link>
           </li>
           <li className="hero__contact-item">
-            <a className="hero__contact-link" href="/">
+            <Link className="hero__contact-link" to="/">
               GMAIL
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -41,9 +43,9 @@ export default function Hero() {
           <span className="hero__display-description-part">LABORAL</span>.
         </p>
         <div className="hero__display-more-container">
-          <a className="hero__display-more-botton" href="/">
+          <Link className="hero__display-more-botton" to="/">
             <i className="fa-solid fa-play"></i>
-          </a>
+          </Link>
           <h4 className="hero__display-more-message">APRENDE MÁS</h4>
         </div>
         <div className="hero__display-invite-container">
@@ -74,8 +76,8 @@ export default function Hero() {
             <div className="hero__slider-controls-reference"></div>
           </div>
           <div className="hero__slider-controls-buttons-container">
-            <button className="hero__slider-controls-button">&lt;</button>
-            <button className="hero__slider-controls-button">&gt;</button>
+            <button onClick={navigate('/')} className="hero__slider-controls-button">&lt;</button>
+            <button onClick={navigate('/')} className="hero__slider-controls-button">&gt;</button>
           </div>
         </div>
       </div>

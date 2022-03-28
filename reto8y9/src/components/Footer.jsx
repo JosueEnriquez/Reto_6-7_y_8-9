@@ -1,5 +1,6 @@
 import React from "react";
 import "../scss/Footer.scss"
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -9,13 +10,13 @@ export default function Footer() {
           <h3 class="footer__info-aprendizage-tile">APRENDIZAJE</h3>
           <ul class="footer__info-aprendizage-list">
             <li class="footer__info-aprendizage-item">
-              <a href="/">DESARROLLO WEB</a>
+              <Link to="/">DESARROLLO WEB</Link>
             </li>
             <li class="footer__info-aprendizage-item">
-              <a href="/">PROGRAMACIÓN</a>
+              <Link to="/">PROGRAMACIÓN</Link>
             </li>
             <li class="footer__info-aprendizage-item">
-              <a href="/">EXPERIENCIA DIGITAL</a>
+              <Link to="/">EXPERIENCIA DIGITAL</Link>
             </li>
           </ul>
         </div>
@@ -23,13 +24,13 @@ export default function Footer() {
           <h3 class="footer__info-popular-title">BOOTCAMPS POPULARES</h3>
           <ul class="footer__info-popular-list">
             <li class="footer__info-popular-item">
-              <a href="/">DESARROLLO WEB FULL STACK DEVELOPERS</a>
+              <Link to="/">DESARROLLO WEB FULL STACK DEVELOPERS</Link>
             </li>
             <li class="footer__info-popular-item">
-              <a href="/">DISEÑO DE INTERFACES UX/UI</a>
+              <Link to="/">DISEÑO DE INTERFACES UX/UI</Link>
             </li>
             <li class="footer__info-popular-item">
-              <a href="/">DISEÑO DE VIDEOJUEGOS</a>
+              <Link to="/">DISEÑO DE VIDEOJUEGOS</Link>
             </li>
           </ul>
         </div>
@@ -37,13 +38,13 @@ export default function Footer() {
           <h3 class="footer__info-contact-title">SÍGUENOS EN:</h3>
           <ul class="footer__info-contact-list">
             <li class="footer__info-contact-item">
-              <a href="/">WHATSAPP</a>
+              <Link to="/">WHATSAPP</Link>
             </li>
             <li class="footer__info-contact-item">
-              <a href="/">LLÁMANOS</a>
+              <Link to="/">LLÁMANOS</Link>
             </li>
             <li class="footer__info-contact-item">
-              <a href="/">ESCRIBENOS</a>
+              <Link to="/">ESCRIBENOS</Link>
             </li>
           </ul>
         </div>
@@ -55,18 +56,18 @@ export default function Footer() {
           </span>
         </div>
         <div class="footer__legal-links">
-          <a class="footer__legal-link" href="/">
+          <Link class="footer__legal-link" to="/">
             EMPRESA
-          </a>
-          <a class="footer__legal-link" href="/">
+          </Link>
+          <Link class="footer__legal-link" to="/">
             BOOTCAMPS
-          </a>
-          <a class="footer__legal-link" href="/">
+          </Link>
+          <Link class="footer__legal-link" to="/">
             POLITICAS DE PRIVACIDAD
-          </a>
-          <a class="footer__legal-link" href="/">
+          </Link>
+          <Link class="footer__legal-link" to="/">
             POLITICAS DE COOKIES
-          </a>
+          </Link>
         </div>
       </section>
     </footer>

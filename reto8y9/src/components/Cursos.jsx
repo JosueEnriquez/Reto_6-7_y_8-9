@@ -1,7 +1,11 @@
 import React from "react";
 import "../scss/Cursos.scss"
+import { useNavigate } from "react-router-dom";
 
 export default function Cursos() {
+
+  const navigate = useNavigate();
+
   return (
     <section className="cursos">
       <h2 className="cursos-title">BOOTCAMPS</h2>
@@ -16,7 +20,7 @@ export default function Cursos() {
           </div>
           <h3 className="cursos__curso-title">DESARROLLO MÓVIL CON FLUTTER</h3>
           <h4 className="cursos__curso-date">INICIO: 28 MARZO</h4>
-          <button className="cursos__curso-button">SHOW MORE</button>
+          <button onClick={navigate("/")} className="cursos__curso-button">SHOW MORE</button>
         </article>
         <article className="cursos__curso-container">
           <div className="cursos__curso-image-container">
@@ -28,7 +32,7 @@ export default function Cursos() {
           </div>
           <h3 className="cursos__curso-title">DESARROLLO MÓVIL CON FLUTTER</h3>
           <h4 className="cursos__curso-date">INICIO: 28 MARZO</h4>
-          <button className="cursos__curso-button">SHOW MORE</button>
+          <button onClick={navigate("/")} className="cursos__curso-button">SHOW MORE</button>
         </article>
         <article className="cursos__curso-container">
           <div className="cursos__curso-image-container">
@@ -40,7 +44,7 @@ export default function Cursos() {
           </div>
           <h3 className="cursos__curso-title">DESARROLLO MÓVIL CON FLUTTER</h3>
           <h4 className="cursos__curso-date">INICIO: 28 MARZO</h4>
-          <button className="cursos__curso-button">SHOW MORE</button>
+          <button onClick={navigate("/")} className="cursos__curso-button">SHOW MORE</button>
         </article>
         <article className="cursos__curso-container">
           <div className="cursos__curso-image-container">
@@ -52,7 +56,7 @@ export default function Cursos() {
           </div>
           <h3 className="cursos__curso-title">DESARROLLO MÓVIL CON FLUTTER</h3>
           <h4 className="cursos__curso-date">INICIO: 28 MARZO</h4>
-          <button className="cursos__curso-button">SHOW MORE</button>
+          <button onClick={navigate("/")} className="cursos__curso-button">SHOW MORE</button>
         </article>
         <article className="cursos__curso-container">
           <div className="cursos__curso-image-container">
@@ -64,7 +68,7 @@ export default function Cursos() {
           </div>
           <h3 className="cursos__curso-title">DESARROLLO MÓVIL CON FLUTTER</h3>
           <h4 className="cursos__curso-date">INICIO: 28 MARZO</h4>
-          <button className="cursos__curso-button">SHOW MORE</button>
+          <button onClick={navigate("/")} className="cursos__curso-button">SHOW MORE</button>
         </article>
         <article className="cursos__curso-container">
           <div className="cursos__curso-image-container">
@@ -76,7 +80,7 @@ export default function Cursos() {
           </div>
           <h3 className="cursos__curso-title">DESARROLLO MÓVIL CON FLUTTER</h3>
           <h4 className="cursos__curso-date">INICIO: 28 MARZO</h4>
-          <button className="cursos__curso-button">SHOW MORE</button>
+          <button onClick={navigate("/")} className="cursos__curso-button">SHOW MORE</button>
         </article>
         <article className="cursos__curso-container">
           <div className="cursos__curso-image-container">
@@ -88,7 +92,7 @@ export default function Cursos() {
           </div>
           <h3 className="cursos__curso-title">DESARROLLO MÓVIL CON FLUTTER</h3>
           <h4 className="cursos__curso-date">INICIO: 28 MARZO</h4>
-          <button className="cursos__curso-button">SHOW MORE</button>
+          <button onClick={navigate("/")} className="cursos__curso-button">SHOW MORE</button>
         </article>
         <article className="cursos__curso-container">
           <div className="cursos__curso-image-container">
@@ -100,7 +104,7 @@ export default function Cursos() {
           </div>
           <h3 className="cursos__curso-title">DESARROLLO MÓVIL CON FLUTTER</h3>
           <h4 className="cursos__curso-date">INICIO: 28 MARZO</h4>
-          <button className="cursos__curso-button">SHOW MORE</button>
+          <button onClick={navigate("/")} className="cursos__curso-button">SHOW MORE</button>
         </article>
       </div>
     </section>

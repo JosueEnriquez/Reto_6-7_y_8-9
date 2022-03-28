@@ -1,5 +1,6 @@
 import './App.css';
 import './assets/css/reset.css';
+import Cursos from './components/Cursos';
 import Hero from './components/Hero';
 import Info from './components/Info';
 import Navigation from './components/Navigation';
@@ -10,6 +11,7 @@ function App() {
       <Navigation/>
       <Hero/>
       <Info/>
+      <Cursos/>
     </>
   );
 }

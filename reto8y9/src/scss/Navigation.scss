@@ -1,0 +1,38 @@
+/* !Header */
+
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  background-color: #fff;
+  padding: 0 2.5rem;
+}
+
+.navbar__logo-container {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.navbar__logo {
+  height: 100%;
+}
+
+.navbar__list-links-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__list-link {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar__list-item-link {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+
+  &.active {
+    font-weight: 500;
+  }
+}

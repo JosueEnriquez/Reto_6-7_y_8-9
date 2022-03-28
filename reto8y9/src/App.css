@@ -1,0 +1,15 @@
+:root {
+  --primary-color:#22241e;
+  --secondary-color:#dd9365;
+  --white:#ffffff;
+  --black:#000;
+  --blue:rgba(13, 180, 231, 0.623);
+  --color-button:rgb(246, 245, 247);
+  scroll-behavior: smooth;
+  --theme-color:#000f34;
+  --text-color:#000f34;
+  --highlight-color-1:#000f34;
+  --highlight-color-2:#5a5a5a;
+  --code-color:#fff;
+  --inverse-theme-color:#fff;
+}

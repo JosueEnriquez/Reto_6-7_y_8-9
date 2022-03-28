@@ -1,0 +1,184 @@
+/* !Hero */
+
+.hero {
+  height: calc(100vh - 70px);
+  display: grid;
+  grid-template: 1fr / 100px 7fr 8fr;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+
+  &__contact-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+  }
+
+  &__contact-list {
+    display: flex;
+    writing-mode: vertical-lr;
+    transform: rotateY(180deg) rotateX(180deg);
+    justify-content: center;
+  }
+
+  &__contact-item {
+    padding: 2rem 0;
+  }
+
+
+  &__display-container {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  &__display-title {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-right: 1.5rem;
+  }
+
+  &__display-description {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    padding-right: 1.5rem;
+  }
+
+  &__display-description-part {
+    font-weight: 500;
+  }
+
+  &__display-more-container {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  &__display-more-botton {
+    height: 3rem;
+    width: 3rem;
+    border: 0.5px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__display-more-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+  }
+
+  &__display-invite-container {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+  }
+
+  &__display-invite-message-container {
+    font-size: 0.7rem;
+    width: 30%;
+    padding-bottom: 3rem;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  &__display-invite-image {
+    height: 150px;
+    width: 70%;
+    display: flex;
+  }
+
+  &__slider-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__slider-slides-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__slider-image {
+    height: 76%;
+  }
+
+  &__slider-slides-description-container {
+    height: 24%;
+    background-color: #131313;
+    color: #fff;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 10fr;
+    grid-template-areas: "index title" "index subtitle";
+    align-items: center;
+    padding: 0 1rem;
+    gap: 0.3rem;
+  }
+
+  &__slider-slides-description-index {
+    font-size: 5rem;
+    line-height: 5rem;
+    grid-area: index;
+    justify-self: center;
+    font-weight: 500;
+  }
+
+  &__slider-slides-description-subtile {
+    font-size: 1rem;
+    line-height: 1rem;
+    align-self: flex-start;
+    color: #8b8b8b;
+    font-size: 1.4rem;
+    padding-top: 0.9rem;
+  }
+
+  &__slider-slides-description-title {
+    align-self: flex-end;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+
+  &__slider-controls-container {
+    background-color: #131313;
+    color: #fff;
+    height: 3rem;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 2.2rem;
+    justify-content: space-between;
+  }
+
+  &__slider-controls-reference-container {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  &__slider-controls-reference {
+    width: 50px;
+    height: 0;
+    border: 2px solid #8b8b8b;
+
+    &.active {
+      border: 2px solid #fff;
+    }
+  }
+
+  &__slider-controls-buttons-container {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__slider-controls-button {
+    color: #fff;
+    font-size: 4rem;
+    font-family: "Red Hat Mono", monospace;
+  }
+}

@@ -1,22 +1,19 @@
 import './App.css';
 import './assets/css/reset.css';
-import Cursos from './components/Cursos';
-import Form from './components/Form';
 import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Info from './components/Info';
 import Navigation from './components/Navigation';
+import Home from './pages/Home';
+import { Routes, Route, BrowserRouter } from "react-router-dom"
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navigation/>
-      <Hero/>
-      <Info/>
-      <Cursos/>
-      <Form/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
       <Footer/>
-    </>
+    </BrowserRouter>
   );
 }
 

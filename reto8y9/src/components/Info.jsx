@@ -5,7 +5,7 @@ import "../scss/Info.scss"
 export default function Info() {
   const navigate = useNavigate()
   return (
-    <section className="info">
+    <section className="info" id="info">
       <div className="info__image-container">
         <img
           className="info__image"

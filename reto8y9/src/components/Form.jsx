@@ -6,7 +6,7 @@ export default function Form() {
   const navigate = useNavigate()
 
   return (
-    <section className="form">
+    <section className="form" id="form">
       <div className="form__image-container">
         <img
           className="form__image"

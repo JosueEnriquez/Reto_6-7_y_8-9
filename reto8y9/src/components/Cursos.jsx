@@ -7,7 +7,7 @@ export default function Cursos() {
   const navigate = useNavigate();
 
   return (
-    <section className="cursos">
+    <section className="cursos" id="cursos">
       <h2 className="cursos-title">BOOTCAMPS</h2>
       <div className="cursos-continer">
         <article className="cursos__curso-container">

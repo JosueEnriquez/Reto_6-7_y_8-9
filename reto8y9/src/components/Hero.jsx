@@ -5,7 +5,7 @@ import '../scss/Hero.scss'
 export default function Hero() {
   const navigate = useNavigate()
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero__contact-container">
         <ul className="hero__contact-list">
           <li className="hero__contact-item">

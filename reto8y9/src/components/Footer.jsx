@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <section class="footer__info-footer">
         <div class="footer__info-aprendizage-container">
           <h3 class="footer__info-aprendizage-tile">APRENDIZAJE</h3>

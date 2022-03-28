@@ -405,7 +405,51 @@
   text-align: center;
 }
 
-/* !!!! */
+/*! Footer */
+
+.footer {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald", sans-serif;
+  border-top: 1px solid #000;
+}
+
+.footer__info-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 4rem;
+}
+
+.footer__info-aprendizage-tile,
+.footer__info-contact-title,
+.footer__info-popular-title {
+  font-size: 1.5rem;
+}
+
+.footer__info-contact-list,
+.footer__info-popular-list, 
+.footer__info-aprendizage-list {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.footer__legal-footer {
+  padding: 1rem 4rem;
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__legal-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!! */
 
   .body {
     background-image: url("../img/banner-main.jpg");

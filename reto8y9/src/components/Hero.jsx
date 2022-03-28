@@ -76,8 +76,8 @@ export default function Hero() {
             <div className="hero__slider-controls-reference"></div>
           </div>
           <div className="hero__slider-controls-buttons-container">
-            <button onClick={navigate('/')} className="hero__slider-controls-button">&lt;</button>
-            <button onClick={navigate('/')} className="hero__slider-controls-button">&gt;</button>
+            <button onClick={() => navigate('/')} className="hero__slider-controls-button">&lt;</button>
+            <button onClick={() => navigate('/')} className="hero__slider-controls-button">&gt;</button>
           </div>
         </div>
       </div>

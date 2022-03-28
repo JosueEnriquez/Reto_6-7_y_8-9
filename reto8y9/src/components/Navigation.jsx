@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from '../assets/images/Logo.png'
 import '../scss/Navigation.scss'
 
@@ -7,20 +8,20 @@ export default function Navigation() {
     <header className="header">
       <nav className="header__navbar">
         <div className="navbar__logo-container">
-          <a className="navbar__logo-link" href="/">
+          <Link className="navbar__logo-link" to="/">
             <img
               className="navbar__logo"
               src={Logo}
               alt="logo"
             />
-          </a>
+          </Link>
         </div>
         <div className="navbar__list-links-container">
           <ul className="navbar__list-link">
             <li className="navbar__list-item">
-              <a className="navbar__list-item-link" href="/">
+              <Link className="navbar__list-item-link" to="/">
                 HOME
-              </a>
+              </Link>
             </li>
             <li className="navbar__list-item">
               <a className="navbar__list-item-link" href="#cursos">

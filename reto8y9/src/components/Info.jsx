@@ -21,7 +21,7 @@ export default function Info() {
           FRONT-END Y EL BACK-END.
         </p>
         <p className="info__description-sub-description">MODALIDAD 100% VIRTUAL</p>
-        <button onClick={navigate('/')} className="info__description-more">SHOW MORE</button>
+        <button onClick={() => navigate('/')} className="info__description-more">SHOW MORE</button>
       </div>
     </section>
   );

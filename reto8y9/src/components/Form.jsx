@@ -59,7 +59,7 @@ export default function Form() {
               HE LEÍDO Y ACEPTO LAS POLÍTICAS DE PRIVACIDAD
             </label>
           </div>
-          <button onClick={navigate("/")} className="form__form-button">REGISTRAR</button>
+          <button onClick={() => navigate("/")} className="form__form-button">REGISTRAR</button>
         </form>
       </div>
     </section>

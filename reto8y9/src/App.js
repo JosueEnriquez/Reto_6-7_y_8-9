@@ -1,6 +1,7 @@
 import './App.css';
 import './assets/css/reset.css';
 import Hero from './components/Hero';
+import Info from './components/Info';
 import Navigation from './components/Navigation';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <Navigation/>
       <Hero/>
+      <Info/>
     </>
   );
 }
